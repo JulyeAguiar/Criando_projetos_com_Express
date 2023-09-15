@@ -1,43 +1,59 @@
 body{
-    background-color: #ffffff;
+    background-color: #de4b4b;
     font-family: "Rancho", cursive;
     margin: 0;
     padding: 0;
+    z-index: 2;
   }
   
-  header img{
+  .logo{
+    background-color: rgb(255, 255, 255);
     vertical-align: middle;
+    width: 200px;
+    height: 55px;
   }
   
   header{
-    font-size: 46px;
+    top: 0;
+    font-size: 15px;
     color: white;
     background-color: #eeecec;
-    padding: 10px 40px;
+    width: 1550px;
+    height: 50px;
     text-align: center;
+    position: fixed;
+
+  }
+
+  .carrousel{
+    z-index: 1;
   }
   
   nav{
-    font-size: 35px;
+    top: 5;
+    font-size: 17px;
     background-color: #ffffff;
-    filter: drop-shadow(0px 2px 2px #aeaeae);
+    width: 1550px;
+    height: 60px;
+    filter: drop-shadow(0px 1px 1px #aeaeae);
+    position: fixed;
   }
   
   nav ul{
     list-style: none;
-    margin: 0px 0px 50px;
-    padding: 5px 0px;
+    margin: 0px 15px 50px;
+    padding: 1px 0px;
   }
   
   nav li{
     display: inline;
-    padding-right: 50px;
+    padding-right: 20px;
   }
   
   footer{
     font-size: 22px;
     color: #ffffff;
-    background-color: #f46647;
+    background-color: #eeecec;
     padding: 10px 40px;
   }
   
@@ -49,26 +65,27 @@ body{
   }
   
   .card{
-    margin: 40px;
-    background-color: white;
+    margin: 20px;
+    background-color: rgb(255, 27, 27);
     display: inline-block;
     overflow: hidden;
-    height: 350px;
+    height: 430px;
     width: 250px;
   }
   
   .card h2{
     padding: 5px;
     margin: 0;
+    font-size: 17px;
   }
   
   .card p{
     padding: 5px;
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
   }
   
   .card img{
     width: 250px;
-    height: 165px;
+    height: 330px;
   }
