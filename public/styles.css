@@ -1,9 +1,9 @@
 body{
-    background-color: #de4b4b;
+    background-color: #eeecec;
     font-family: "Rancho", cursive;
     margin: 0;
     padding: 0;
-    z-index: 2;
+
   }
   
   .logo{
@@ -13,8 +13,17 @@ body{
     height: 55px;
   }
   
+  nav{
+    font-size: 17px;
+    background-color: #ffffff;
+    width: 1550px;
+    height: 60px;
+    filter: drop-shadow(0px 1px 1px #aeaeae);
+    position: fixed;
+    z-index: 1;
+  }
+
   header{
-    top: 0;
     font-size: 15px;
     color: white;
     background-color: #eeecec;
@@ -22,22 +31,10 @@ body{
     height: 50px;
     text-align: center;
     position: fixed;
-
-  }
-
-  .carrousel{
     z-index: 1;
   }
+
   
-  nav{
-    top: 5;
-    font-size: 17px;
-    background-color: #ffffff;
-    width: 1550px;
-    height: 60px;
-    filter: drop-shadow(0px 1px 1px #aeaeae);
-    position: fixed;
-  }
   
   nav ul{
     list-style: none;
