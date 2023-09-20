@@ -14,6 +14,7 @@ body{
   }
   
   nav{
+    top: 0;
     font-size: 17px;
     background-color: #ffffff;
     width: 1550px;
@@ -23,18 +24,6 @@ body{
     z-index: 1;
   }
 
-  header{
-    font-size: 15px;
-    color: white;
-    background-color: #eeecec;
-    width: 1550px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    z-index: 1;
-  }
-
-  
   
   nav ul{
     list-style: none;
@@ -63,7 +52,7 @@ body{
   
   .card{
     margin: 20px;
-    background-color: rgb(255, 27, 27);
+    background-color: rgb(171, 166, 166);
     display: inline-block;
     overflow: hidden;
     height: 430px;
@@ -85,4 +74,48 @@ body{
   .card img{
     width: 250px;
     height: 330px;
+  }
+
+  header{
+    background-color: aquamarine;
+    align-items: center;
+  }
+  
+  .titulo{
+    text-align: center;
+  }
+
+  .imgPrincipal img{
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    overflow: hidden;
+    height: 710px;
+    width: 1425px;
+  }
+
+  .cardProduto{
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    overflow: hidden;
+    height: 1000px;
+    width: 600px;
+  }
+
+  .cardProduto img{
+    width: 600px;
+    height: 700px;
+  }
+
+  .cardProduto h2{
+    padding: 5px;
+    margin: 0;
+    font-size: 17px;
+  }
+  
+  .cardProduto p{
+    padding: 5px;
+    margin: 0;
+    font-size: 17px;
   }

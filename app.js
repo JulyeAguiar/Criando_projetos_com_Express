@@ -6,10 +6,10 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {//controller/rota
-  res.render('index', { message: 'Olá, Mundo! Sou Marina Delrei, um novo cargo eu ganhei!' });
+  res.render('index', { message: 'Rodando index' });
 });
-app.get('/contatos', (req, res) => {
-  res.render('contato', { message: 'Página de contatos' });
+app.get('/produto', (req, res) => {
+  res.render('produto', { message: 'Rodando produto' });
 });
 
 app.listen(port, () => {
