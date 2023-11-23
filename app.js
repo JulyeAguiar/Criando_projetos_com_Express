@@ -5,9 +5,6 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {//controller/rota
-  res.render('index', { message: 'Rodando index' });
-});
 
 const produtos =[
   {id: 1, titulo: "Chuck Taylor All Star Seasonal Colors Verde", preco:"R$ 269,90", descricao: "Criado em 1917 como um Tênis de basquete que não escorregava, o All Star foi originalmente promovido pela performance do jogador Chuck Taylor. Porém, ao passar das décadas algo incrível acontece: o sneaker, com seu visual atemporal e seu clássico logo no tornozelo, foi organicamente adotado por rebeldes, artistas, músicos, sonhadores, pensadores e originais. Sua silhueta clássica, o Chuck Taylor All Star está entre os modelos de sneakers mais icônicos de todos os tempos um símbolo de conforto e autenticidade cultural.", imagem:"Chuck Taylor All Star Seasonal Colors Verde.jpg"},
@@ -21,6 +18,15 @@ const produtos =[
   {id: 9, titulo: "Chuck Taylor All Star Fairy Goddess Preto", preco:"R$ 399,90", descricao: "Criado em 1917 como um Tênis de basquete que não escorregava, o All Star foi originalmente promovido pela performance do jogador Chuck Taylor. Porém, ao passar das décadas algo incrível acontece: o sneaker, com seu visual atemporal e seu clássico logo no tornozelo, foi organicamente adotado por rebeldes, artistas, músicos, sonhadores, pensadores e originais. Sua silhueta clássica, o Chuck Taylor All Star está entre os modelos de sneakers mais icônicos de todos os tempos um símbolo de conforto e autenticidade cultural.", imagem:"Chuck Taylor All Star Fairy Goddess Preto.jpg"},
   {id: 10, titulo: "Chuck Taylor All Star City Utility Preto", preco:"R$ 529,90", descricao: "Criado em 1917 como um Tênis de basquete que não escorregava, o All Star foi originalmente promovido pela performance do jogador Chuck Taylor. Porém, ao passar das décadas algo incrível acontece: o sneaker, com seu visual atemporal e seu clássico logo no tornozelo, foi organicamente adotado por rebeldes, artistas, músicos, sonhadores, pensadores e originais. Sua silhueta clássica, o Chuck Taylor All Star está entre os modelos de sneakers mais icônicos de todos os tempos um símbolo de conforto e autenticidade cultural.", imagem:"Chuck Taylor All Star City Utility Preto.jpg"}
 ]
+
+function buscarProdutoPorId(id){
+  const produto = produtos.find(produto => produto.id == id)
+  return produto || null
+}
+
+app.get('/', (req, res) => {//controller/rota
+  res.render('index', {produtos});
+});
 
 app.get('/produto', (req, res) => {
   res.render('produto', { message: 'Rodando produto' });
